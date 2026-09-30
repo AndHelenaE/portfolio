@@ -1,70 +1,64 @@
 # Andrea-Helena | Work
 
-Complete static portfolio website, including the ZOLEO and BlueCosmo case studies, original exported image assets, image viewer, and desktop/mobile comparison controls.
+Portfolio featuring ZOLEO and BlueCosmo case studies.
+
+Live website: https://andhelenae.github.io/portfolio/
 
 ## Requirements
 
-No npm packages, API keys, backend, or build step are required. The site uses plain HTML, CSS, and JavaScript. All image assets are included locally.
+Plain HTML, CSS, and JavaScript. No npm packages, API keys, backend, or build step. Image assets are local in `assets/`.
 
-## Publish with GitHub Pages
+## Current content
 
-1. Sign in at https://github.com and create a new repository named `portfolio`. Choose Public if using GitHub Free. You can initialize it with a README.
-2. Extract this ZIP on your computer and open the `andrea-helena-portfolio` folder.
-3. In the repository, select **Add file > Upload files**. Upload the contents of that folder, including the entire `assets` folder. Do not upload the ZIP itself or put the enclosing portfolio folder inside the repository. `index.html` must be at the repository root.
-4. Commit the files to `main`. If your file picker hides `.nojekyll`, create an empty file with that name using **Add file > Create new file**. It tells Pages to serve the files without Jekyll processing.
-5. Open **Settings > Pages**. Under **Build and deployment**, choose **Deploy from a branch**. Choose **main**, then **/(root)**, and click **Save**.
-6. Wait for the deployment to finish. The Pages settings show the published URL, normally `https://YOUR-USERNAME.github.io/portfolio/`. Check the Actions tab if a deployment fails.
+- About and AI experience, including Tools I use most.
+- Both case studies use the same five-part structure: challenge and role, research and decisions, design system contribution, design evolution, and outcomes.
+- Design system contributions are distinguished from ownership of the full systems.
+- Compact expandable design specifications and in-page image previews.
+- ZOLEO typography, buttons, and full colour palette, including darker greens.
+- BlueCosmo typography, colours, and buttons, with wireframes before final designs.
+- Existing research, baseline analytics, page comparisons, and mobile controls retained.
 
-GitHub Pages publishes the website publicly. A public repository also exposes its source files and images. This export includes the case-study content and baseline analytics shown in the current portfolio. Review that content before publishing. To store the code privately without a public website, create a private repository and leave Pages disabled. Pages availability for private repositories depends on your GitHub plan; a private repository does not automatically make a Pages website private.
+## Updating this existing repository
 
-Official instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+1. Extract the latest update ZIP.
+2. In the repository root, use Add file > Upload files to upload the loose files from the ZIP. Commit the replacements to main.
+3. Open the existing assets folder in GitHub. Upload the six images inside the ZIP's assets folder directly into it, and commit.
+4. Keep all existing assets. This update contains only the six additional images, not a replacement for the entire assets folder.
+5. GitHub Pages rebuilds automatically from main and /(root). You do not need to create another repository or change Pages settings.
 
-## Alternative: upload with Git
+The repository is public, as is its GitHub Pages website.
 
-Create an empty repository on GitHub without adding a README, license, or gitignore. Open a terminal inside the extracted portfolio folder, replace YOUR-USERNAME, and run:
+## Local preview
 
-```bash
-git init
-git branch -M main
-git add .
-git commit -m "Add portfolio website"
-git remote add origin https://github.com/YOUR-USERNAME/portfolio.git
-git push -u origin main
-```
-
-Authenticate with your normal GitHub credential manager, GitHub CLI, or a personal access token when prompted. GitHub does not accept your account password for HTTPS Git operations. Then enable Pages using step 5 above.
-
-## Preview on your computer
-
-With Python 3 installed, open a terminal in this folder and run:
+From a complete local copy of the repository, run:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-On Windows, `py -m http.server 8000` is an alternative. Open http://localhost:8000 in your browser. Press Ctrl+C in the terminal to stop the server. You can also use a local static-server extension in your editor.
+Open http://localhost:8000. On Windows, `py -m http.server 8000` is an alternative.
 
 ## File guide
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Portfolio homepage and project previews |
-| `zoleo.html` | ZOLEO case study |
-| `bluecosmo.html` | BlueCosmo case study |
-| `styles.css` | Shared styles and responsive layouts |
-| `app.js` | Main page interactions |
-| `viewer.js` | In-page image viewer |
-| `device-switch.js` | Desktop/mobile comparison controls |
-| `case-nav.js` | Case-study navigation script |
-| `favicon.svg` | Browser tab icon |
-| `assets/` | Complete exported image asset folder |
-| `.nojekyll` | Disables Jekyll processing on GitHub Pages |
+| index.html | Homepage, About, and AI experience |
+| zoleo.html | ZOLEO case study |
+| bluecosmo.html | BlueCosmo case study |
+| styles.css | Shared and responsive styling |
+| app.js | Homepage interactions |
+| viewer.js | In-page image viewer |
+| device-switch.js | Desktop/mobile controls |
+| case-nav.js | Case-study navigation script |
+| favicon.svg | Browser icon |
+| assets/ | Local images |
+| .nojekyll | Serve static files without Jekyll processing |
 
-## Make future edits
+## Future changes
 
-Edit the relevant HTML file for text or page content, `styles.css` for appearance, and the JavaScript files for behavior. Keep image filenames and letter case consistent with the references in HTML and JavaScript. Keep local links relative so the site works under `/portfolio/` as well as a custom domain.
+Edit the relevant HTML, CSS, or JavaScript files, then commit to main. Use relative asset paths and preserve filename case. After deployment, check the homepage, both case studies, expandable specifications, image viewer, and mobile layouts.
 
-Commit and push changes to `main` to update the published site. With Git:
+For an existing local Git checkout:
 
 ```bash
 git add .
@@ -72,8 +66,8 @@ git commit -m "Update portfolio"
 git push
 ```
 
-Before publishing changes, check both case studies, image viewer open/close and zoom, desktop/mobile switches, and narrow-screen layouts. If images are missing, check their exact filenames and confirm the `assets` folder is at the root beside `index.html`.
+The original ChatGPT-hosted portfolio and GitHub Pages are separate deployments. Updates to one do not automatically update the other.
 
-## Export details
+## Attribution
 
-This is a copy of the current website files, exported September 29, 2026. Existing pages, styles, scripts, and all asset files were preserved. The original hosted site was not changed. Hosting-provider configuration, Git history, credentials, and source research documents are not included. No open-source license has been added; brand assets retain their respective owners' rights.
+No open-source license has been added. Brand assets retain their respective owners' rights. Shared design system examples illustrate the foundations behind Andrea-Helena's website work; individual contributions are described in each case study.
