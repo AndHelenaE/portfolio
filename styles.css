@@ -325,3 +325,20 @@
  .page-comparison>figure.comparison-before,.page-comparison>figure.comparison-after{padding:18px}
  .measurement-comparison .baseline-evidence,.measurement-followup{padding:20px}
 }
+
+/* Matching foundation, contribution, and action rows for every system card. */
+#design-system .system-cards{align-items:stretch;row-gap:20px}
+.system-card{display:grid;grid-template-rows:auto auto auto 1fr auto;gap:18px}
+.system-card>h3{margin:0}
+.system-card-content h4{font-size:.875rem;line-height:1.5;font-weight:600;color:var(--ink);margin:0 0 8px}
+.case-section .system-card-content p{font-size:1rem;line-height:1.65;margin:0;color:var(--muted)}
+.system-card .system-spec{margin:0;align-self:start}
+.system-card .system-spec summary{min-height:48px}
+@supports(grid-template-rows:subgrid){
+ #design-system .system-cards{row-gap:18px}
+ .system-card{grid-row:span 5;grid-template-rows:subgrid}
+}
+@media(max-width:1000px){
+ .system-card{grid-row:auto;grid-template-rows:auto auto auto auto auto;gap:18px}
+ #design-system .system-cards{row-gap:20px}
+}
