@@ -7,9 +7,6 @@
    opener.dataset.image=button.dataset.src;opener.dataset.caption=button.dataset.caption;
    opener.setAttribute('aria-label','View '+button.dataset.caption);
    img.src=button.dataset.src;img.alt=button.dataset.caption;
-   const title=figure.querySelector('[data-preview-title]');
-   if(title) title.textContent=button.dataset.title || button.dataset.caption.replace(/^[^·]+·\s*/, '');
-   else figure.querySelector('figcaption').textContent=button.dataset.caption;
   }));
  });
 })();

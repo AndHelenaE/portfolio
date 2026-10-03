@@ -280,3 +280,48 @@
  .ai-practice{padding:24px}
  .project-cover-link{padding:22px}
 }
+
+/* Keep the designed boxes and angled accents, without decorative outlines. */
+.hello-sticker{background:var(--yellow);color:var(--ink);padding:9px 15px;border:0;border-radius:8px 8px 8px 2px;transform:rotate(-3deg);letter-spacing:0;font-weight:500}
+.project{background:#f5f4f9;border:0;border-radius:24px;overflow:hidden;box-shadow:0 8px 28px #26213606}
+.project-cover-link{border-radius:0}
+.project .project-content{padding:28px}
+.case-intro{background:var(--lime);padding:32px;border:0;border-radius:24px;transform:rotate(1deg);box-shadow:0 12px 36px #2621360b}
+.case-intro.bc-intro{background:#dfebf4;transform:rotate(-1deg)}
+.case-intro dt{font-weight:600;color:var(--ink)}
+.step-number{border:0;transform:rotate(-5deg);border-radius:11px}
+.approach-list li:nth-child(2) .step-number{transform:rotate(5deg)}
+.approach-list li:nth-child(3) .step-number{transform:rotate(-3deg)}
+.case-overview{border:0;border-radius:20px}
+.ai-practice,.ux-rationale{border:0;border-radius:20px}
+#design-system .system-cards{gap:20px}
+.system-card{padding:24px;background:#f5f4f9;border:0;border-radius:18px}
+.system-card .system-spec summary{background:#eae6f5}
+.page-comparison>figure.comparison-before,.page-comparison>figure.comparison-after{padding:22px;border:0;border-radius:18px}
+.page-comparison>figure.comparison-before{background:#f0eff4}
+.page-comparison>figure.comparison-after{background:#eeebfb}
+.page-comparison .comparison-header{min-height:52px;align-items:center;margin-bottom:20px}
+.page-comparison .comparison-caption{flex:1 1 100px}
+.page-comparison .case-shot{border:0;box-shadow:none}
+.comparison-header .device-switch{background:#ffffffb3}
+.wireframe-gallery{border:0;border-radius:18px}
+.case-closing{border:0;border-radius:24px}
+.measurement-comparison{gap:24px}
+.measurement-comparison .baseline-evidence{padding:24px;background:#fff;border:0;border-radius:18px}
+.measurement-followup{padding:24px;background:#eeebf5;border:0;border-radius:18px}
+@media(max-width:1000px){
+ #design-system .system-cards{gap:20px}
+}
+@media(max-width:780px){
+ .case-hero{grid-template-columns:1fr}
+ .case-intro,.case-intro.bc-intro{padding:28px;transform:none}
+ .project .project-content{padding:24px}
+ .page-comparison>figure.comparison-before,.page-comparison>figure.comparison-after{padding:20px}
+ .page-comparison .comparison-header{min-height:48px}
+ .system-card{padding:24px}
+}
+@media(max-width:520px){
+ .case-intro,.case-intro.bc-intro{padding:24px}
+ .page-comparison>figure.comparison-before,.page-comparison>figure.comparison-after{padding:18px}
+ .measurement-comparison .baseline-evidence,.measurement-followup{padding:20px}
+}
